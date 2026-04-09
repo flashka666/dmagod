@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="dmagod/dmagod.vcxproj" Id="0335d96c-4996-45c1-a8c7-2632e7dad0b1" />
+</Solution>
