@@ -351,6 +351,7 @@ int main() {
     // изменение данных маршрута
     changeRouteData(routes, "Грузовой-1");
     saveAllToFiles(routes, SIZE); // сохранение изменений в файлы
+    wrapperPrint(routes, SIZE, "ОБНОВЛЁННОЕ РАСПИСАНИЕ ПОСЛЕ ИЗМЕНЕНИЙ"); // обновленное расписание
 
     // очистка памяти
     delete[] routes;
@@ -359,7 +360,7 @@ int main() {
 
     cout << "\n==========================================" << endl;
     cout << "ПРОГРАММА ЗАВЕРШЕНА!" << endl;
-    cout << "Файлы созданы по пути C:\Users\user\source\repos\dmagod\dmagod:" << endl;
+    cout << "Файлы созданы по пути C:\\Users\\user\\source\\repos\\dmagod\\dmagod:" << endl;
     cout << "  - routes_text.txt  (текстовый файл с новыми ценами)" << endl;
     cout << "  - routes_binary.bin (бинарный файл)" << endl;
     cout << "==========================================" << endl;
