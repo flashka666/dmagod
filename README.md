@@ -14,6 +14,9 @@ C:\Users\user\source\repos\НАЗВАНИЕ_ВАШЕГО_ПРОЕКТА
 функции.
 
 КРАСИВЫЙ РЕЗУЛЬТАТ ВЫПОЛНЕНИЯ ПРОГРАММЫ СМОТРИТЕ ВО ВКЛАДКЕ CODE!!!
+dmagod/README.md -> code
+или ссылка
+https://github.com/flashka666/dmagod/blob/master/README.md?plain=1
 
 ==========================================
     РАСПИСАНИЕ ЭЛЕКТРОПОЕЗДОВ
