@@ -209,12 +209,23 @@ void readPricesFromFile(const char* filename, schedule* routes, int size) {
         cout << "\n!!! Файл " << filename << " не найден. Цены остаются из инициализации. !!!\n";
         return;
     }
-
-    for (int i = 0; i < size; i++) {
-        fin >> routes[i].price;
+    
+    char routeName[30];
+    int price;
+    int matchedCount = 0;
+    
+    while (fin >> routeName >> price) {
+        for (int i = 0; i < size; i++) {
+            if (strcmp(routes[i].route, routeName) == 0) {
+                routes[i].price = price;
+                matchedCount++;
+                break;
+            }
+        }
     }
+    
     fin.close();
-    cout << "\nЦены успешно загружены из " << filename << endl;
+    cout << "\nЗагружено цен для " << matchedCount << " маршрутов из " << filename << endl;
 }
 
 // запись в текстовый файл
