@@ -185,10 +185,8 @@ void changeRouteData(schedule* routes, const char* name) {
             } while (routes[i].carcount < 0);
 
             int type;
-            do {
-                printf("Тип (0-товарный, 1-пассажирский, 2-ремонтный): ");
-                cin >> type;
-            } while (type < 0 || type > 2);
+            printf("Тип (0-товарный, 1-пассажирский, 2-ремонтный): ");
+            cin >> type;
             routes[i].type = (traintype)type;
 
             do {
